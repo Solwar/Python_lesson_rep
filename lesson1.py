@@ -7,3 +7,6 @@ def weather(temperature):
         return 'A temperature is normal'
     else:
         return 'Hot!'
+
+
+print(weather(5))
