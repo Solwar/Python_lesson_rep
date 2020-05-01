@@ -19,6 +19,18 @@ def discounted(price, discount, max_discount=20, name=''):
     else:
         return price - (price * discount / 100)
 
-print(discounted(50000, 10, name='OPPO'))
+
+phone1 = {'name': 'iPhone Xs Plus', 'stock': 24, 'price': 65432.1, 'discount': 25}
+phone2 = {'name': 'Samsung Galaxy S10', 'stock': 8, 'price': 50000.0, 'discount': 10}
+
+
+dis_iphone = discounted(phone1['price'], phone1['discount'], name=phone1['name'])
+print(dis_iphone)
+65432.1
+
+dis_android = discounted(phone2['price'], phone2['discount'], name=phone2['name'])
+print(dis_android)
+
+#print(discounted(50000, 10, name='OPPO'))
 
 #print(weather(5))
